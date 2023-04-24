@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de sugerencias</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#aficiones">Aficiones</a></li>
+                <li><a href="index.html#foto">Mi Foto</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Formulario de sugerencias</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-456-7890"><br><br>
+
+        <label for="sugerencia">Sugerencia:</label><br>
+        <textarea id="sugerencia" name="sugerencia" rows="10" cols="50" required></textarea><br><br>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+            <option value="mejoras">Mejoras</option>
+            <option value="problemas">Problemas</option>
+            <option value="comentarios">Comentarios</option>
+        </select><br><br>
+
+        <label for="prioridad">Prioridad:</label><br>
+        <input type="radio" id="alta" name="prioridad" value="alta">
+        <label for="alta">Alta</label><br>
+        <input type="radio" id="media" name="prioridad" value="media">
+        <label for="media">Media</label><br>
+        <input type="radio" id="baja" name="prioridad" value="baja">
+        <label for="baja">Baja</label><br><br>
+
+        <label for="contacto">¿Deseas ser contactado?</label><br>
+        <input type="checkbox" id="si" name="contacto" value="si">
+        <label for="si">Sí</label><br>
+        <input type="checkbox" id="no" name="contacto" value="no">
+        <label for="no">No</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
